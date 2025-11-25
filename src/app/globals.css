@@ -25,6 +25,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family:"Inter", sans-serif;
+}
+
+.react-calendar__navigation__label__labelText {
+font-weight: 600;
+}
+
+.react-calendar__tile--active {
+ background-color: #C3EBFA !important;
+  color:black;
+}
+
 /* Hide Next.js floating badge (bottom-left dev/logo button).
    This targets several common class/attribute names used by the badge
    and forces it hidden. If you want to restore the badge, remove this block. */

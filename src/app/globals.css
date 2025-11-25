@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hide Next.js floating badge (bottom-left dev/logo button).
+   This targets several common class/attribute names used by the badge
+   and forces it hidden. If you want to restore the badge, remove this block. */
+#__next .nextjs-badge,
+.nextjs-badge,
+.nextjs,
+.nextjs-icon,
+.next-dev-overlay,
+#__next_dev_overlay,
+a[aria-label="Next.js"],
+button[aria-label="Next.js"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
